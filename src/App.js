@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HeroSection from './components/heroSection/HeroSection';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+import ProductCarousel from './components/productCarousel/ProductCarousel';
+import CategoriesSection from './components/categoriesSection/CategoriesSection';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        {/* <Route path="/" element={<HeroSection />} /> */}
+        {/* <Route path="/products" element={<CategoriesSection />} /> */}
+        {/* <Route path="/featured" element={<FeaturedProducts />} /> */}
+        {/* <Route path="/testimonials" element={<Testimonials />} /> */}
+      </Routes>
+      {/* <ProductCarousel /> */}
+      <Footer />
+    </Router>
   );
 }
 

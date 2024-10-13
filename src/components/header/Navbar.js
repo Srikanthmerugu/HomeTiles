@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
+import './Header.css'
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import "./Header.css";
 
-const Header = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+const Navbar = () => {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const [dropdownOpen, setDropdownOpen] = useState({
     studyAbroad: false,
     media: false,
@@ -21,21 +21,8 @@ const Header = () => {
   };
 
   return (
-    <nav className="navbar">
-      <div className="top-bar">
-        <div className="contact-info">
-          <p><i className="phone-icon">📞</i>+91 0000000000</p>
-          <p><i className="phone-icon">📱</i>+91 0000000000</p>
-          <p><i className="email-icon">✉️</i>info@samplemail.com</p>
-        </div>
-        <div className="social-icons">
-          <FaFacebookF className="icon icons-1" />
-          <FaInstagram className="icon icons-2" />
-          <FaWhatsapp className="icon icons-3" />
-        </div>
-      </div>
-
-      <div className="navbar-container">
+    <div>
+       <div className="navbar-container">
         <div className="logo">
         <img src="./assets/logo.png" alt="Logo" className="Footer-logo" />
 
@@ -91,8 +78,8 @@ const Header = () => {
           {isMobileMenuOpen ? "" : <FaBars />}
         </div>
       </div>
-    </nav>
-  );
-};
+    </div>
+  )
+}
 
-export default Header;
+export default Navbar

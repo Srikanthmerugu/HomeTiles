@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -24,9 +25,9 @@ const Header = () => {
     <nav className="navbar">
       <div className="top-bar">
         <div className="contact-info">
-          <p><i className="phone-icon">📞</i>+91 0000000000</p>
-          <p><i className="phone-icon">📱</i>+91 0000000000</p>
-          <p><i className="email-icon">✉️</i>info@samplemail.com</p>
+          <p><i className="phone-icon">📞{" "}</i>+91 9014479656</p>
+          {/* <p><i className="phone-icon">📱 {" "}</i>+91 0000000000</p> */}
+          <p><i className="email-icon">✉️</i> {" "}Vltsstores@gmail.com</p>
         </div>
         <div className="social-icons">
           <FaFacebookF className="icon icons-1" />
@@ -37,7 +38,7 @@ const Header = () => {
 
       <div className="navbar-container">
         <div className="logo">
-        <img src="./assets/logo.png" alt="Logo" className="Footer-logo" />
+        <img src="./assets/logo.png" alt="Logo" className="header-logo" />
 
           {/* <h1>𝑯𝒐𝒎𝒆 𝑻𝒊𝒍𝒆𝒔</h1> */}
         </div>
@@ -48,16 +49,17 @@ const Header = () => {
           </div>
           <ul className="nav-links large-nav">
             <li className="nav-item">
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li className="nav-item dropdown">
                 
-              <a >Products</a>
+              <a >Products ⏷</a>
               <div className="dropdown-menu">
-                <a href="/study-abroad/country1">Flore Tiles</a>
-                <a href="/study-abroad/country2">Wall tiles</a>
-                <a href="/study-abroad/country2">Parking Tiles</a>
-                <a href="/study-abroad/country2">More..</a>
+                <Link to="/flore-tiles">
+                Flore Tiles</Link>
+                <Link to="/wall-tiles">Wall tiles</Link>
+                <Link to="/parking-tiles">Parking Tiles</Link>
+                {/* <a href="/featured">More..</a> */}
               </div>
             </li>
 
@@ -76,7 +78,7 @@ const Header = () => {
               </div>
             </li> */}
             <li className="nav-item">
-              <a href="/contact">Gallary</a>
+              <a href="/gallery">Gallary</a>
             </li>
             <li className="nav-item">
               <a href="/contact">Contact</a>

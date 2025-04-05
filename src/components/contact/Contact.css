@@ -3,34 +3,54 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: #f5f2eb;
-    color: #04444d;
+    /* background-color: #f5f2eb; */
+    /* color: #04444d;
+    background-image: url("https://img.freepik.com/premium-photo/luxurious-showroom-displaying-highend-building-materials-like-marble-exotic-woods-designer-ti_841543-77346.jpg?w=1800"); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background: rgb(2,0,36);
+background: radial-gradient(circle, rgb(30, 28, 69) 0%, rgba(6,34,87,1) 0%, rgba(0,36,107,1) 21%, rgba(138,170,229,1) 100%); */
   }
   
   .contact-image {
     flex: 1;
     padding-right: 30px;
+    
   }
   
-  .contact-image img {
-    width: 100%;
-    height: auto;
+  .contact-image iframe {
+    width: 80%;
+    height: 540px;
     border-radius: 10px;
+    border-radius: 11px;
+background: #200101;
+box-shadow:  27px 27px 55px #5e5e5e,
+             -27px -27px 55px #6a6969;
   }
   
   .contact-form {
     flex: 1;
-    background-color: #ffffff;
+    background-color: #c0e0f4;
     align-items: center;
     padding: 30px;
+    background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* width: 70%; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #2001016e; */
+/* box-shadow:  27px 27px 55px #5e5e5e,
+             -27px -27px 55px #6a6969; */
   }
   
   .contact-form h2 {
     margin-bottom: 20px;
     font-size: 24px;
-    color: #004e91;
+    color: rgb(13, 114, 208);
   }
   
   .contact-form-group {
@@ -41,12 +61,13 @@
     display: block;
     margin-bottom: 8px;
     font-size: 16px;
+    color: rgb(13, 114, 208);
   }
   
   .contact-form-group input,
   .contact-form-group textarea {
-    width: 100%;
-    padding: 10px;
+    width: 90%;
+    padding: 15px;
     border: 1px solid #cccccc;
     border-radius: 5px;
     font-size: 14px;
@@ -71,3 +92,90 @@
     color: white;
   }
   
+  .cantact-hero{
+    width: 100%;
+    height: 50vh;
+  }
+
+  .contact-map{
+    width: 100%;
+  }
+
+.breadcrumb-old{
+  color: rgb(161, 160, 160) !important;
+}
+
+  .contact-header {
+    position: relative;
+    height: 200px;
+    background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  
+  .header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-container1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .contact-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .contact-subtitles {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .breadcrumb {
+    font-size: 1rem;
+    color: #f8f8f8;
+  }
+  
+  .breadcrumb span:first-child {
+    color: #f8f8f8;
+    cursor: pointer;
+  }
+  
+  .breadcrumb span:last-child {
+    color: #e0a800;
+    font-weight: 600;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .contact-header {
+      height: 300px;
+    }
+    
+    .contact-header h1 {
+      font-size: 2.2rem;
+    }
+    
+    .contact-subtitles {
+      font-size: 1.2rem;
+    }
+  }

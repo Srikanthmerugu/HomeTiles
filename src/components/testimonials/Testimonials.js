@@ -11,23 +11,23 @@ import { MdLinearScale } from "react-icons/md";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Efecha Omoware",
-      message: "I now enjoy financial freedom like I’ve never known before doing what I love.",
+      name: "Ramesh",
+      message: "We love our kitchen countertops. Everyone was friendly and efficient. The mix of Antique Brown with Cream Fusion for the island is perfect!",
       image: "https://www.w3schools.com/howto/img_avatar.png",
     },
     {
-      name: "Efecha Omoware",
-      message: "I now enjoy financial freedom like I’ve never known before doing what I love.",
+      name: "Sai Ram",
+      message: "The team at Just Tile & Marble offers top-notch customer service! Great communication and very easy to deal with! The showroom is impressive",
       image: "https://www.w3schools.com/howto/img_avatar.png",
     },
     {
-      name: "Efecha Omoware",
-      message: "I now enjoy financial freedom like I’ve never known before doing what I love.",
+      name: "Alekya",
+      message: "Marble and Granite made the process easy and smooth. We love the Vardara quartz counters; they transformed our kitchen beautifully.",
       image: "https://www.w3schools.com/howto/img_avatar.png",
     },
     {
-      name: "Efecha Omoware",
-      message: "I now enjoy financial freedom like I’ve never known before doing what I love.",
+      name: "Trhinath Reddy",
+      message: "Creations in Tile and Marble's craftsmanship is amazing. Our new vanity top looks beautiful in our bathroom. Exceptional customer service!",
       image: "https://www.w3schools.com/howto/img_avatar.png",
     },
   ];
@@ -80,7 +80,7 @@ const Testimonials = () => {
                   <h4>{testimonial.name}</h4>
                 </article>
                 <article className="testimonial-container-content">
-                  <p>{testimonial.message}</p>
+                  <span>{testimonial.message}</span>
                 </article>
               </div>
             </div>

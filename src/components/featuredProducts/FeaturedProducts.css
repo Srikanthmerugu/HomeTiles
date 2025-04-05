@@ -2,6 +2,10 @@
 .FeaturedProducts-main{
     background-color: white;
 }
+.FeaturedProducts-main-2{
+  padding:0 2%;
+
+}
 .FeaturedProducts-container {
     padding: 5%;
   }

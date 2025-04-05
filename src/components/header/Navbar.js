@@ -23,8 +23,8 @@ const Navbar = () => {
   return (
     <div>
        <div className="navbar-container">
-        <div className="logo">
-        <img src="./assets/logo.png" alt="Logo" className="Footer-logo" />
+        <div className="logo">23456789
+        <img src="./assets/logo.svg" alt="Logo" className="Footer-logo" />
 
           {/* <h1>𝑯𝒐𝒎𝒆 𝑻𝒊𝒍𝒆𝒔</h1> */}
         </div>
@@ -39,12 +39,12 @@ const Navbar = () => {
             </li>
             <li className="nav-item dropdown">
                 
-              <a >Products</a>
+              <a >Products123456</a>
               <div className="dropdown-menu">
-                <a href="/study-abroad/country1">Flore Tiles</a>
-                <a href="/study-abroad/country2">Wall tiles</a>
-                <a href="/study-abroad/country2">Parking Tiles</a>
-                <a href="/study-abroad/country2">More..</a>
+                <a href="/featured">Flore Tiles</a>
+                <a href="/featured">Wall tiles</a>
+                <a href="/featured">Parking Tiles</a>
+                <a href="/featured">More..</a>
               </div>
             </li>
 
@@ -63,7 +63,7 @@ const Navbar = () => {
               </div>
             </li> */}
             <li className="nav-item">
-              <a href="/contact">Gallary</a>
+              <a href="/gallery">Gallary234567</a>
             </li>
             <li className="nav-item">
               <a href="/contact">Contact</a>

@@ -4,7 +4,7 @@ import './FeaturedProducts.css';
 import { MdLinearScale } from 'react-icons/md';
 import { SiAntdesign } from 'react-icons/si';
 
-const FeaturedProducts = () => {
+const WallTiles = () => {
   const products = [
     { name: "Flore Tiles", imageUrl: "https://img.freepik.com/free-photo/seamless-pattern_23-2151021394.jpg?t=st=1728395422~exp=1728399022~hmac=8081077ba524bece44c61cdd1c6a9b5baad0f3c9ddfbd404a1e927aac0fbffe8&w=740", details: "Glossy tiles for walls, floors, facade / 30x30cm / IMPERIA GOLD / 6 FACES / EG-6954" },
     { name: "Wall Tiles", imageUrl: "https://img.freepik.com/free-photo/digital-art-with-organic-floral-shapes_23-2151072740.jpg?t=st=1728395546~exp=1728399146~hmac=1ca1373d2807fd7e14ae65390f1f662f6047414686990bb9c733f28d2ca45606&w=740", details: "Glossy tiles for walls, floors, facade / 40x40cm / IMPERIA GOLD / 6 FACES / EG-6954" },
@@ -22,10 +22,10 @@ const FeaturedProducts = () => {
   ];
 
   return (
-    <div className='FeaturedProducts-main'>
-    <div className="FeaturedProducts-container">
+    <div className='FeaturedProducts-main-2'>
+    <div className="FeaturedProducts-containe">
     <div className='textmono-head'>
-    <h1>Featured Products</h1>
+    <h1>Wall Tiles</h1>
     <p className=''><MdLinearScale /> <span><SiAntdesign className='head-icon'/>
         </span> <MdLinearScale /></p>
         </div>
@@ -58,4 +58,4 @@ const FeaturedProducts = () => {
   );
 };
 
-export default FeaturedProducts;
+export default WallTiles;

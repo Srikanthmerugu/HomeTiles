@@ -1,66 +1,103 @@
-/* Footer styles */
 .Footer-container {
-    background-color: #197aa9;
-    color: #f5f2eb;
-    padding: 40px 20px;
-  }
-  
-  .Footer-content {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-items: start;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .Footer-card {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .Footer-logo {
-    width: 200px;
-    margin-bottom: 10px;
-  }
-  
-  .Footer-description {
-    color: #f5f2eb;
-    font-size: 14px;
-  }
-  
-  .Footer-title {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #fdc727;
-  }
-  
-  .Footer-navLinks,
-  .Footer-socialMedia {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .Footer-navLinks li,
-  .Footer-socialMedia a {
-    margin-bottom: 8px;
-  }
-  
-  .Footer-navLinks li a,
-  .Footer-socialMedia a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .Footer-navLinks li a:hover,
-  .Footer-socialMedia a:hover {
-    text-decoration: underline;
-  }
-  
-  .Footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid #f5f2eb;
-    font-size: 14px;
-  }
-  
+  background-color: #003366;
+  color: #fff;
+  padding: 20px;
+}
+
+.Footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2;
+  justify-content: space-between;
+}
+
+.Footer-card {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.Footer-logo {
+  text-align: center;
+  width: 230px;
+  margin-top: 12%;
+  border-radius: 20px;
+  /* margin-bottom: 10px; */
+}
+
+.Footer-description {
+  margin-top: 10px;
+}
+
+.Footer-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.Footer-navLinks {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Footer-navLinks li {
+  margin-bottom: 8px;
+}
+
+.Footer-navLinks a {
+  color: #fff;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+.Footer-navLinks a:hover {
+padding-left: 1%;
+}
+
+.Footer-navLinks a:hover {
+  color: #f0db4f; /* Change color on hover */
+}
+
+.Footer-socialMedia a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.Footer-socialMedia a svg {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.Footer-socialMedia a:hover {
+  color: #f0db4f; /* Hover color for icons */
+}
+
+.Footer-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.Footer-gallery img {
+  width: 70%;
+  height: 7vh;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  transition: all .3s ease;
+}
+.Footer-gallery img:hover {
+
+  transform: scale(1.2);
+
+
+}
+
+.Footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.Footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}

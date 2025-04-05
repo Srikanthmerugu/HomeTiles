@@ -6,6 +6,7 @@ import Feedback from '../components/testimonials/Testimonials'
 import Testimonials from '../components/testimonials/Testimonials'
 import Contact from '../components/contact/Contact'
 import Accordion from '../components/accordion/Accordion'
+import ContactTwo from '../components/contact/ContactTwo'
 
 const Home = () => {
   return (
@@ -15,7 +16,8 @@ const Home = () => {
       <FeaturedProducts />
      <Testimonials/>
 
-    <Contact />
+    {/* <Contact /> */}
+    <ContactTwo />
     <Accordion />
     </div>
   )
